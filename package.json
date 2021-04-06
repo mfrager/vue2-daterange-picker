@@ -5,11 +5,11 @@
   "author": "Nikola Kostadinov <nikolakk@gmail.com>",
   "main": "dist/vue2-daterange-picker.umd.min.js",
   "jsnext:main": "dist/vue2-daterange-picker.umd.min.js",
-  "private": false,
+  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Innologica/vue2-daterange-picker"
+    "url": "ssh://git@git.atellix.net:custom/vue2-daterange-picker.git"
   },
   "files": [
     "dist",
@@ -22,7 +22,7 @@
     "lib": "vue-cli-service build --target lib --name vue2-daterange-picker ./src/index.js",
     "docs:dev": "concurrently \"npm run components:watch\" \"vuepress dev docs\"",
     "docs:build": "vuepress build docs",
-    "prepublishOnly": "npm run lib",
+    "prepare": "npm run lib",
     "unit": "vue-cli-service test:unit"
   },
   "dependencies": {
