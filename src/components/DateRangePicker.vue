@@ -62,7 +62,7 @@
             :clickRange="clickRange"
             v-if="showRanges"
           >
-            <calendar-ranges class="col-md-3 col-lg-3" style="width: 150px;"
+            <calendar-ranges class="col-md-3 col-lg-3"
                              @clickRange="clickRange"
                              @showCustomRange="showCustomRangeCalendars=true"
                              :always-show-calendars="alwaysShowCalendars"
